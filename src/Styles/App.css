@@ -4,10 +4,74 @@ body,
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 .AppContainer {
     border: 1px solid #333;
     padding: 1vw;
     margin: 1vw;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .SummaryContainer {
+        border: 1px solid green;
+        display: grid !important;
+        justify-items: center;
+        padding: 1vw;
+    }
+}
+
+
+
+.MainContainer {
+    /* border: 1px solid blue; */
+    display: grid;
+    gap: 1vh
+}
+
+.navUL {
+    list-style: none;
+}
+
+.navLI {
+    border-top: 1px solid #333;
+}
+
+.navUL li:nth-child(6) {
+    border-bottom: 1px solid #333;
+}
+
+
+.HeaderContainer {
+    /* border: 1px solid green; */
+    padding: 1vw;
+    display: grid;
+    justify-items: center;
+}
+
+.contactInfo {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+
+
+.SummaryContainer {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+}
+
+.summaryUL {
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    list-style: square inside;
 }
