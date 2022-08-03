@@ -1,0 +1,13 @@
+*,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.AppContainer {
+    border: 1px solid #333;
+    padding: 1vw;
+    margin: 1vw;
+}
