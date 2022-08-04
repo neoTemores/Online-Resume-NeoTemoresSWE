@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Education = ({ showSkill }) => {
+const Education = () => {
     return (
-        <div><h4>Education</h4>
-            {showSkill.Education && <p>--My Education Skills go here!</p>}
+        <div>
+            <p>--My Education Skills go here!</p>
         </div>
     )
 }
