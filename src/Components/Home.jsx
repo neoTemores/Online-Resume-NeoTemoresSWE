@@ -6,9 +6,7 @@ import Projects from './Projects';
 import Experience from './Experience';
 import Education from './Education';
 import Links from './Links';
-import { RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri'
-import { MdArrowDropDown } from 'react-icons/md'
-import { IoIosArrowDropup, IoIosArrowDropdown } from 'react-icons/io'
+
 import { BsChevronUp, BsChevronDown } from 'react-icons/bs'
 import { FaChevronDown } from 'react-icons/fa'
 
@@ -61,20 +59,20 @@ const Home = () => {
                     <li onClick={handleClick} id='Summary' className='navLI'> <div className='navlistTitle'><h4>Summary</h4> <FaChevronDown className='Summary' /></div></li>
                     {showSkill.Summary && <li className='navLI skillInfo'><Summary /></li>}
 
-                    <li onClick={handleClick} id='TechnicalSkills' className='navLI'> <div className='navlistTitle'><h4>Technical Skills</h4><BsChevronDown className='TechnicalSkills' /></div></li>
+                    <li onClick={handleClick} id='TechnicalSkills' className='navLI'> <div className='navlistTitle'><h4>Technical Skills</h4><FaChevronDown className='TechnicalSkills' /></div></li>
                     {showSkill.TechnicalSkills && <li className='navLI skillInfo'><TechnicalSkills /></li>}
 
-                    <li onClick={handleClick} id='Projects' className='navLI'><div className='navlistTitle'><h4>Projects</h4><BsChevronDown className='Projects' /></div></li>
+                    <li onClick={handleClick} id='Projects' className='navLI'><div className='navlistTitle'><h4>Projects</h4><FaChevronDown className='Projects' /></div></li>
                     {showSkill.Projects && <li className='navLI skillInfo'><Projects /></li>}
 
-                    <li onClick={handleClick} id='Experience' className='navLI'><div className='navlistTitle'><h4>Experience</h4><BsChevronDown className='Experience' /></div></li>
+                    <li onClick={handleClick} id='Experience' className='navLI'><div className='navlistTitle'><h4>Experience</h4><FaChevronDown className='Experience' /></div></li>
                     {showSkill.Experience && <li className='navLI skillInfo'><Experience /></li>}
 
 
-                    <li onClick={handleClick} id='Education' className='navLI'><div className='navlistTitle'><h4>Education</h4><BsChevronDown className='Education' /></div></li>
+                    <li onClick={handleClick} id='Education' className='navLI'><div className='navlistTitle'><h4>Education</h4><FaChevronDown className='Education' /></div></li>
                     {showSkill.Education && <li className='navLI skillInfo'><Education /></li>}
 
-                    <li onClick={handleClick} id='Links' className='navLI'><div className='navlistTitle'><h4>Links</h4><BsChevronDown className='Links' /></div></li>
+                    <li onClick={handleClick} id='Links' className='navLI'><div className='navlistTitle'><h4>Links</h4><FaChevronDown className='Links' /></div></li>
                     {showSkill.Links && <li className='navLI skillInfo'><Links /></li>}
 
                 </ul>
