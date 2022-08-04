@@ -1,9 +1,11 @@
 import React from 'react';
 import pdf from '../Assets/NeoTemores-ResumeSWE.pdf'
 
-const Links = () => {
+const Links = ({ showSkill }) => {
     return (
-        <div>Links</div>
+        <div><h4>Links</h4>
+            {showSkill.Links && <p>--My Links  go here!</p>}
+        </div>
     )
 }
 

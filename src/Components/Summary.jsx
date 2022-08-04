@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Summary = () => {
-    return (<>
-        <div>Summary</div>
+const Summary = ({ showSkill }) => {
 
-        <div className='SummaryContainer'>
-            <div><img src='https://xsgames.co/randomusers/avatar.php?g=male' alt='pic' /></div>
+    return (<>
+        <div><h4>Summary</h4></div>
+
+        {showSkill.Summary && <div className='SummaryContainer'>
+            <div><img src='https://xsgames.co/randomusers/avatar.php?g=male' alt='pic' height='150px' /></div>
 
             <ul className='summaryUL'>
                 <li className='summaryLI'>Full-stack software engineer capable of creating and deploying JavaScript React applications</li>
@@ -13,7 +14,8 @@ const Summary = () => {
                 <li className='summaryLI'>US Army veteran with a passion for software development, seeking a long-term career in the software industry</li>
             </ul>
 
-        </div>
+
+        </div>}
     </>
 
     )

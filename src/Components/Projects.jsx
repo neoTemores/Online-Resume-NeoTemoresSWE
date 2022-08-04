@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Projects = () => {
+const Projects = ({ showSkill }) => {
     return (
-        <div>Projects</div>
+        <div><h4>Projects</h4>
+            {showSkill.Projects && <p>--My Projects Skills go here!</p>}
+        </div>
     )
 }
 

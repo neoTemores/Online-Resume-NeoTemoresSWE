@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Experience = () => {
+const Experience = ({ showSkill }) => {
     return (
-        <div>Experience</div>
+        <div><h4>Experience</h4>
+            {showSkill.Experience && <p>--My Experience Skills go here!</p>}
+        </div>
     )
 }
 

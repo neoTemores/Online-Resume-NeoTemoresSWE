@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './Header'
 import Summary from './Summary'
 import TechnicalSkills from './TechnicalSkills';
@@ -8,8 +8,26 @@ import Education from './Education';
 import Links from './Links';
 
 const Home = () => {
+    const [showSkill, setShowSkill] = useState({
+        'Summary': true,
+        'TechnicalSkills': false
+    })
+
     const handleClick = (e) => {
-        console.log(e.target)
+        let id = e.currentTarget.id
+
+        setShowSkill((prevState) => {
+            return {
+                'Summary': false,
+                'TechnicalSkills': false,
+                'Projects': false,
+                'Experience': false,
+                'Education': false,
+                'Links': false,
+                [id]: !prevState[id]
+            }
+        })
+        // e.currentTarget.classList.toggle('hide')
     }
     return (
         <div className='MainContainer'>
@@ -17,12 +35,12 @@ const Home = () => {
 
             <nav>
                 <ul className='navUL'>
-                    <li onClick={handleClick} id='Summary' className='navLI'><Summary /></li>
-                    <li onClick={handleClick} id='TechnicalSkills' className='navLI'><TechnicalSkills /></li>
-                    <li onClick={handleClick} id='Projects' className='navLI'><Projects /></li>
-                    <li onClick={handleClick} id='Experience' className='navLI'><Experience /></li>
-                    <li onClick={handleClick} id='Education' className='navLI'><Education /></li>
-                    <li onClick={handleClick} id='Links' className='navLI'><Links /></li>
+                    <li onClick={handleClick} id='Summary' className='navLI'><Summary showSkill={showSkill} /></li>
+                    <li onClick={handleClick} id='TechnicalSkills' className='navLI'><TechnicalSkills showSkill={showSkill} /></li>
+                    <li onClick={handleClick} id='Projects' className='navLI'><Projects showSkill={showSkill} /></li>
+                    <li onClick={handleClick} id='Experience' className='navLI'><Experience showSkill={showSkill} /></li>
+                    <li onClick={handleClick} id='Education' className='navLI'><Education showSkill={showSkill} /></li>
+                    <li onClick={handleClick} id='Links' className='navLI'><Links showSkill={showSkill} /></li>
                 </ul>
             </nav>
 
