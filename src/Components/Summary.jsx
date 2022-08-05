@@ -1,11 +1,12 @@
 import React from 'react'
+import ProfilePic from '../Assets/profile-pic1.jpeg'
 
 const Summary = () => {
 
     return (
 
         <div className='SummaryContainer'>
-            <div className='profileImgDiv'><img src='https://xsgames.co/randomusers/avatar.php?g=male' alt='pic' /></div>
+            <div className='profileImgDiv'><img src={ProfilePic} alt='pic' /></div>
 
             <ul className='summaryUL'>
                 <li className='summaryLI'>Full-stack software engineer capable of creating and deploying JavaScript React applications</li>

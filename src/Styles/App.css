@@ -118,16 +118,16 @@ body,
 }
 
 .profileImgDiv {
-    height: 150px;
-    width: 150px;
-    background-color: #5555;
+    height: fit-content;
+    width: fit-content;
+    /* background-color: #5555; */
     border-radius: 5%;
 }
 
 .profileImgDiv img {
     border-radius: 5%;
-    height: 150px;
-    width: 150px;
+    height: 100%;
+    width: 100%;
     /* z-index: 1; */
     /* position: absolute; */
 }
