@@ -5,8 +5,8 @@ const Links = () => {
     return (
         <div>
             <p>--My Links  go here!</p>
-            <a href='./Assets/NeoTemores ResumeSWE.pdf' download>Click to download</a>
-            <a href={pdf} >Click to view</a>
+            <a href={pdf} >Click to view my resume</a><br />
+            <a href={pdf} download>Click to download my resume</a>
         </div>
     )
 }
