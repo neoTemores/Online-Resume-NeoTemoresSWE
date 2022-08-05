@@ -56,28 +56,58 @@ const Home = () => {
             <Header />
             <nav>
                 <ul className='navUL'>
-                    <li onClick={handleClick} id='Summary' className='navLI'> <div className='navlistTitle'><h4>Summary</h4> <FaChevronDown className='Summary' /></div></li>
+
+                    <li onClick={handleClick} id='Summary' className='navLI'>
+                        <div className='navlistTitle'>
+                            <h4>Summary</h4> <FaChevronDown className='Summary' />
+                        </div>
+                    </li>
+
                     {showSkill.Summary && <li className='navLI skillInfo'><Summary /></li>}
 
-                    <li onClick={handleClick} id='TechnicalSkills' className='navLI'> <div className='navlistTitle'><h4>Technical Skills</h4><FaChevronDown className='TechnicalSkills' /></div></li>
+                    <li onClick={handleClick} id='TechnicalSkills' className='navLI'>
+                        <div className='navlistTitle'>
+                            <h4>Technical Skills</h4> <FaChevronDown className='TechnicalSkills' />
+                        </div>
+                    </li>
+
                     {showSkill.TechnicalSkills && <li className='navLI skillInfo'><TechnicalSkills /></li>}
 
-                    <li onClick={handleClick} id='Projects' className='navLI'><div className='navlistTitle'><h4>Projects</h4><FaChevronDown className='Projects' /></div></li>
+                    <li onClick={handleClick} id='Projects' className='navLI'>
+                        <div className='navlistTitle'>
+                            <h4>Projects</h4><FaChevronDown className='Projects' />
+                        </div>
+                    </li>
+
                     {showSkill.Projects && <li className='navLI skillInfo'><Projects /></li>}
 
-                    <li onClick={handleClick} id='Experience' className='navLI'><div className='navlistTitle'><h4>Experience</h4><FaChevronDown className='Experience' /></div></li>
+                    <li onClick={handleClick} id='Experience' className='navLI'>
+                        <div className='navlistTitle'>
+                            <h4>Experience</h4><FaChevronDown className='Experience' />
+                        </div>
+                    </li>
+
                     {showSkill.Experience && <li className='navLI skillInfo'><Experience /></li>}
 
 
-                    <li onClick={handleClick} id='Education' className='navLI'><div className='navlistTitle'><h4>Education</h4><FaChevronDown className='Education' /></div></li>
+                    <li onClick={handleClick} id='Education' className='navLI'>
+                        <div className='navlistTitle'>
+                            <h4>Education</h4><FaChevronDown className='Education' />
+                        </div>
+                    </li>
+
                     {showSkill.Education && <li className='navLI skillInfo'><Education /></li>}
 
-                    <li onClick={handleClick} id='Links' className='navLI'><div className='navlistTitle'><h4>Links</h4><FaChevronDown className='Links' /></div></li>
+                    <li onClick={handleClick} id='Links' className='navLI'>
+                        <div className='navlistTitle'>
+                            <h4>Links</h4><FaChevronDown className='Links' />
+                        </div>
+                    </li>
+
                     {showSkill.Links && <li className='navLI skillInfo'><Links /></li>}
 
                 </ul>
             </nav>
-
         </div>
     )
 }
