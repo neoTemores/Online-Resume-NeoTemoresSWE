@@ -8,9 +8,12 @@ body,
 }
 
 .AppContainer {
-    border: 1px solid #333;
+    border: 1px solid #5555;
+    box-shadow: 5px 5px 5px #5555;
+    border-radius: 5px;
     padding: 1vw;
-    margin: 1vw;
+    margin: 2vw;
+    /* max-width: 90vw; */
 }
 
 .hide {
@@ -27,7 +30,6 @@ body,
 
 
 .MainContainer {
-    /* border: 1px solid blue; */
     display: grid;
     gap: 1vh
 }
@@ -74,7 +76,7 @@ body,
 }
 
 .navLI {
-    border-top: 1px solid #333;
+    border-top: 1px solid #555;
     padding: 1vw;
 }
 
@@ -87,7 +89,7 @@ body,
 }
 
 .navUL li:last-child:not(.summaryLI) {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #555;
 }
 
 
@@ -128,15 +130,11 @@ body,
     border-radius: 5%;
     height: 100%;
     width: 100%;
-    /* z-index: 1; */
-    /* position: absolute; */
 }
 
 .summaryUL {
     margin-left: 1vw;
     display: grid;
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
     gap: 2vw;
     list-style: square inside;
 }
