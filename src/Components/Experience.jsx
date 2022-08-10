@@ -3,7 +3,7 @@ import React from 'react'
 const Experience = () => {
     return (
         <div>
-            <p>--My Experience Skills go here!</p>
+            <p>--My work experience will go here!</p>
         </div>
     )
 }

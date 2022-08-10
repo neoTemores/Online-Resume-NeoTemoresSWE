@@ -16,17 +16,17 @@ const Portfolio = () => {
         <div style={{ 'max-width': "90vw" }}>
             <Carousel showArrows={true} >
 
-                <video style={{ 'max-width': "100%" }} controls autoPlay loop muted>
+                <video style={{ 'max-width': "100%" }} controls muted>
                     <source src={babyGame} type='video/mp4' />
                     <img src={babyGameThumbNail} height="50" alt='pic' />
                 </video>
 
-                <video style={{ 'max-width': "100%" }} controls autoPlay loop muted>
+                <video style={{ 'max-width': "100%" }} controls muted>
                     <source src={findLuvVid} type='video/mp4' />
                     <img src={findLuvVivThumbNail} height="50" alt='pic' />
                 </video>
 
-                <video style={{ 'max-width': "100%" }} controls autoPlay loop muted>
+                <video style={{ 'max-width': "100%" }} controls muted>
                     <source src={projectRitter} type='video/mp4' />
                     <img src={projectRitterThumbnail} height="50" alt='pic' />
                 </video>
