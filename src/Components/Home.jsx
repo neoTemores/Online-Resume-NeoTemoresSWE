@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Header from './Header'
 import Summary from './Summary'
 import TechnicalSkills from './TechnicalSkills';
-import Projects from './Projects';
+import Portfolio from './Portfolio';
 import Experience from './Experience';
 import Education from './Education';
 import Links from './Links';
@@ -12,9 +12,9 @@ import { FaChevronDown } from 'react-icons/fa'
 
 const Home = () => {
     const [showSkill, setShowSkill] = useState({
-        'Summary': true,
+        'Summary': false,
         'TechnicalSkills': false,
-        'Projects': false,
+        'Portfolio': false,
         'Experience': false,
         'Education': false,
         'Links': false,
@@ -27,7 +27,7 @@ const Home = () => {
             return {
                 'Summary': false,
                 'TechnicalSkills': false,
-                'Projects': false,
+                'Portfolio': false,
                 'Experience': false,
                 'Education': false,
                 'Links': false,
@@ -73,13 +73,13 @@ const Home = () => {
 
                     {showSkill.TechnicalSkills && <li className='navLI skillInfo'><TechnicalSkills /></li>}
 
-                    <li onClick={handleClick} id='Projects' className='navLI'>
+                    <li onClick={handleClick} id='Portfolio' className='navLI'>
                         <div className='navlistTitle'>
-                            <h4>Projects</h4><FaChevronDown className='Projects' />
+                            <h4>Portfolio</h4><FaChevronDown className='Portfolio' />
                         </div>
                     </li>
 
-                    {showSkill.Projects && <li className='navLI skillInfo'><Projects /></li>}
+                    {showSkill.Portfolio && <li className='navLI skillInfo'><Portfolio /></li>}
 
                     <li onClick={handleClick} id='Experience' className='navLI'>
                         <div className='navlistTitle'>

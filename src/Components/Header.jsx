@@ -6,12 +6,13 @@ const Header = () => {
     return (
         <div className='HeaderContainer'>
             <h1>Neo Temores</h1>
+            <p>- Full stack software engineer -</p>
             <div className='contactInfo'>
-                <h6>Chino, CA</h6>
+                <h5>Chino, CA</h5>
                 <GoPrimitiveDot />
-                <h6>(909) 287-4873</h6>
+                <h5>(909) 287-4873</h5>
                 <GoPrimitiveDot />
-                <h6>TemoresNeo@gmail.com</h6>
+                <h5>TemoresNeo@gmail.com</h5>
             </div>
         </div>
     )

@@ -6,7 +6,9 @@ const Summary = () => {
     return (
 
         <div className='SummaryContainer'>
-            <div className='profileImgDiv'><img src={ProfilePic} alt='pic' /></div>
+            {/* <div className='profileImgDiv'> */}
+            <img src={ProfilePic} alt='pic' className='profilePicture' />
+            {/* </div> */}
 
             <ul className='summaryUL'>
                 <li className='summaryLI'>Full-stack software engineer capable of creating and deploying JavaScript React applications</li>
