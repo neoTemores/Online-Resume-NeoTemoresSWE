@@ -22,7 +22,6 @@ const Home = () => {
 
     const handleClick = (e) => {
         let id = e.currentTarget.id
-
         setShowSkill((prevState) => {
             return {
                 'Summary': false,
