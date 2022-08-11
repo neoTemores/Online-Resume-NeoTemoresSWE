@@ -163,6 +163,35 @@ body,
     margin: auto;
 }
 
-#testVid1::before {
-    content: 'test';
+.control-dots {
+    background-color: #5555;
+    border-radius: 9999px;
+}
+
+.control-arrow::before .control-next::before {
+    background-color: #555;
+}
+
+button.control-arrow.control-next,
+button.control-arrow.control-prev {
+    background-color: #5555;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: .5vw;
+}
+
+.carousel.carousel-slider {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.control-dots {
+    /* display: flex; */
+    max-width: fit-content;
+}
+
+.thumbs li:hover {
+    cursor: pointer;
 }
