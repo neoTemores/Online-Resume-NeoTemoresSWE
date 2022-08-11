@@ -18,8 +18,8 @@ import pokeDex from '../Assets/videos/pokeDexDemo.mov'
 import pokeDexThumbnail from '../Assets/thumbnails/pokeDexThumbnail.png'
 import tvGuide from '../Assets/videos/tvGuideDemo.mov'
 import tvGuideThumbnail from '../Assets/thumbnails/tvGuideThumbnail.png'
-import simpsons from '../Assets/videos/simpsonsDemo.mov'
-import simpsonsThumbnail from '../Assets/thumbnails/simpsonsThumbnail.png'
+// import simpsons from '../Assets/videos/simpsonsDemo.mov'
+// import simpsonsThumbnail from '../Assets/thumbnails/simpsonsThumbnail.png'
 import ebay from '../Assets/videos/ebayDemo.mov'
 import ebayThumbnail from '../Assets/thumbnails/ebayThumbnail.png'
 
@@ -58,7 +58,7 @@ const Portfolio = () => {
                 {createVideoDisplay(pokeDex, pokeDexThumbnail)}
                 {createVideoDisplay(tvGuide, tvGuideThumbnail)}
                 {createVideoDisplay(ebay, ebayThumbnail)}
-                {createVideoDisplay(simpsons, simpsonsThumbnail)}
+                {/* {createVideoDisplay(simpsons, simpsonsThumbnail)} */}
             </Carousel>
         </div>
 
