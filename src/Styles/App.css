@@ -4,7 +4,9 @@ body,
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #222;
+    color: #fff
 }
 
 #root {
@@ -35,7 +37,6 @@ body,
 }
 
 
-
 .MainContainer {
     display: grid;
     gap: 1vh
@@ -44,7 +45,7 @@ body,
 .navUL {
     list-style: none;
     display: grid;
-    gap: 1vw;
+    gap: 2vw;
 }
 
 .navlistTitle {
@@ -53,11 +54,12 @@ body,
     transition: rotate 5s;
     align-items: center;
     transition: all .1s ease-in-out;
+    width: fit-content;
 }
 
-.navlistTitle:hover {
+/* .navlistTitle:hover {
     transform: translateX(2vw);
-}
+} */
 
 .rotateArrowOpen {
     animation: rotateArrowOpen .5s;
@@ -90,14 +92,19 @@ body,
 }
 
 .navLI {
-    /* border-top: 1px solid #555; */
+    border: 1px solid #555;
     padding: 1vw;
     box-shadow: 5px 5px 5px #5555;
+    box-shadow: 5px 5px 5px #aaa;
     border-radius: 5px;
 }
 
 .navLI:hover {
     cursor: pointer;
+}
+
+.navLI:hover .navlistTitle {
+    transform: translateX(2vw);
 }
 
 .navLI.skillInfo:hover {

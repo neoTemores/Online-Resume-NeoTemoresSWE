@@ -16,9 +16,12 @@ import rubiksCube from '../Assets/videos/RubiksCubeDemo.mov'
 import rubiksCubeThumbnail from '../Assets/thumbnails/rubiksCubeThumbnail.png'
 import pokeDex from '../Assets/videos/pokeDexDemo.mov'
 import pokeDexThumbnail from '../Assets/thumbnails/pokeDexThumbnail.png'
-
-
-
+import tvGuide from '../Assets/videos/tvGuideDemo.mov'
+import tvGuideThumbnail from '../Assets/thumbnails/tvGuideThumbnail.png'
+import simpsons from '../Assets/videos/simpsonsDemo.mov'
+import simpsonsThumbnail from '../Assets/thumbnails/simpsonsThumbnail.png'
+import ebay from '../Assets/videos/ebayDemo.mov'
+import ebayThumbnail from '../Assets/thumbnails/ebayThumbnail.png'
 
 const Portfolio = () => {
 
@@ -34,45 +37,28 @@ const Portfolio = () => {
         console.log("clicked")
     }
 
+    const createVideoDisplay = (video, thumbnail) => {
+        return (
+            <video style={{ 'maxWidth': "90%", 'height': '90%' }} loop autoPlay controls muted>
+                <source src={video} type='video/mp4' />
+                <img src={thumbnail} height="50" alt='pic' />
+            </video>
+        )
+    }
+
     return (
         <div className='carouselMainContainer' >
             <Carousel showArrows={true} >
-
-                <video style={{ 'maxWidth': "90%", 'height': '90%' }} loop autoPlay controls muted>
-                    <source src={babyGame} type='video/mp4' />
-                    <img src={babyGameThumbNail} onClick={handleClick} height="50" alt='pic' />
-                </video>
-
-                <video style={{ 'maxWidth': "90%", 'height': '90%' }} loop autoPlay controls muted>
-                    <source src={findLuvVid} type='video/mp4' />
-                    <img src={findLuvVivThumbNail} height="50" alt='pic' />
-                </video>
-
-                <video style={{ 'maxWidth': "90%", 'height': '90%' }} loop autoPlay controls muted>
-                    <source src={projectRitter} type='video/mp4' />
-                    <img src={projectRitterThumbnail} height="50" alt='pic' />
-                </video>
-
-                <video style={{ 'maxWidth': "90%", 'height': '90%' }} loop autoPlay controls muted>
-                    <source src={teamGenerator} type='video/mp4' />
-                    <img src={teamGeneratorThumbnail} height="50" alt='pic' />
-                </video>
-
-                <video style={{ 'maxWidth': "90%", 'height': '90%' }} loop autoPlay controls muted>
-                    <source src={rubiksCube} type='video/mp4' />
-                    <img src={rubiksCubeThumbnail} height="50" alt='pic' />
-                </video>
-
-                <video style={{ 'maxWidth': "90%", 'height': '90%' }} loop autoPlay controls muted >
-                    <source src={drawingApp} type='video/mp4' />
-                    <img src={drawingAppThumbnail} height="50" alt='pic' />
-                </video>
-
-                <video style={{ 'maxWidth': "90%", 'height': '90%' }} loop autoPlay controls muted >
-                    <source src={pokeDex} type='video/mp4' />
-                    <img src={pokeDexThumbnail} height="50" alt='pic' />
-                </video>
-
+                {createVideoDisplay(babyGame, babyGameThumbNail)}
+                {createVideoDisplay(findLuvVid, findLuvVivThumbNail)}
+                {createVideoDisplay(projectRitter, projectRitterThumbnail)}
+                {createVideoDisplay(teamGenerator, teamGeneratorThumbnail)}
+                {createVideoDisplay(rubiksCube, rubiksCubeThumbnail)}
+                {createVideoDisplay(drawingApp, drawingAppThumbnail)}
+                {createVideoDisplay(pokeDex, pokeDexThumbnail)}
+                {createVideoDisplay(tvGuide, tvGuideThumbnail)}
+                {createVideoDisplay(ebay, ebayThumbnail)}
+                {createVideoDisplay(simpsons, simpsonsThumbnail)}
             </Carousel>
         </div>
 

@@ -12,7 +12,7 @@ const Summary = () => {
 
             <ul className='summaryUL'>
                 <li className='summaryLI'>Full-stack software engineer capable of creating and deploying JavaScript React applications</li>
-                <li className='summaryLI'>Enjoys problem-solving and possesses strong communication, customer service and design skills</li>
+                <li className='summaryLI'>Enjoys problem-solving and possesses strong communication, customer service, critical thinking and design skills</li>
                 <li className='summaryLI'>US Army veteran with a passion for software development, seeking a long-term career in the software industry</li>
             </ul>
 
