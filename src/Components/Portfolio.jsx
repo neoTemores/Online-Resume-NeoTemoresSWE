@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel'
 
 // import drawingApp from '../Assets/videos/drawingDemoTrim.mov'
-// import drawingAppThumbnail from '../Assets/thumbnails/drawingAppThumbnail.png'
+import drawingAppThumbnail from '../Assets/thumbnails/drawingAppThumbnail.png'
 // import babyGame from '../Assets/videos/GuessBabyNameGame.mov'
 import babyGameThumbNail from '../Assets/thumbnails/babyName.png'
 // import findLuvVid from '../Assets/videos/FullChatDemo.mov'
@@ -15,13 +15,13 @@ import teamGeneratorThumbnail from '../Assets/thumbnails/reandom-team-gen-thumbn
 // import rubiksCube from '../Assets/videos/RubiksCubeDemo.mov'
 import rubiksCubeThumbnail from '../Assets/thumbnails/rubiksCubeThumbnail.png'
 // import pokeDex from '../Assets/videos/pokeDexDemo.mov'
-// import pokeDexThumbnail from '../Assets/thumbnails/pokeDexThumbnail.png'
+import pokeDexThumbnail from '../Assets/thumbnails/pokeDexThumbnail.png'
 // import tvGuide from '../Assets/videos/tvGuideDemo.mov'
-// import tvGuideThumbnail from '../Assets/thumbnails/tvGuideThumbnail.png'
+import tvGuideThumbnail from '../Assets/thumbnails/tvGuideThumbnail.png'
 // import simpsons from '../Assets/videos/simpsonsDemo.mov'
 // import simpsonsThumbnail from '../Assets/thumbnails/simpsonsThumbnail.png'
 // import ebay from '../Assets/videos/ebayDemo.mov'
-// import ebayThumbnail from '../Assets/thumbnails/ebayThumbnail.png'
+import ebayThumbnail from '../Assets/thumbnails/ebayThumbnail.png'
 
 const Portfolio = () => {
 
@@ -47,25 +47,41 @@ const Portfolio = () => {
     return (
         <div className='carouselMainContainer' >
             <Carousel showArrows={true} >
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZzzN1BS2jfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/ZzzN1BS2jfM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
 
                     <img src={babyGameThumbNail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z5RqlOc3cz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/Z5RqlOc3cz4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={findLuvVivThumbNail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/u7sE2hLOOYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/u7sE2hLOOYA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={projectRitterThumbnail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/oXsrGTnkNNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/oXsrGTnkNNQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={rubiksCubeThumbnail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7aN5yAXKZlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/7aN5yAXKZlo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={teamGeneratorThumbnail} height="50" alt='pic' />
+                </iframe>
+
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/GE3VZwhK0Hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    <img src={pokeDexThumbnail} height="50" alt='pic' />
+                </iframe>
+
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/iogcURRFVLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    <img src={drawingAppThumbnail} height="50" alt='pic' />
+                </iframe>
+
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/TMpHwaeaxuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    <img src={ebayThumbnail} height="50" alt='pic' />
+                </iframe>
+
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/iUtceOoW4iE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    <img src={tvGuideThumbnail} height="50" alt='pic' />
                 </iframe>
 
                 {/* {createVideoDisplay(babyGame, babyGameThumbNail)} */}
