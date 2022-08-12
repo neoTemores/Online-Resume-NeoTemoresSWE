@@ -264,3 +264,24 @@ button.control-arrow.control-prev {
 .thumbs li:hover {
     cursor: pointer;
 }
+
+
+.linksContainer {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.linksAnchorTag,
+.linksAnchorTag:visited {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+
+.linksWithTextDiv {
+    display: grid;
+    justify-items: center;
+}
