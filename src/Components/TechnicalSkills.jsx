@@ -82,12 +82,12 @@ const TechnicalSkills = () => {
                 <img src={webpackLogo} alt='webpack icon' />
                 <img src={babelLogo} alt='babel icon' />
                 <img src={agileLogo} alt='agile icon' />
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>NPM</span>
-                <span>Webpack</span>
-                <span>Babel</span>
-                <span>Agile methodology</span>
+                <span className='skillDescription'>Git</span>
+                <span className='skillDescription'>GitHub</span>
+                <span className='skillDescription'>NPM</span>
+                <span className='skillDescription'>Webpack</span>
+                <span className='skillDescription'>Babel</span>
+                <span className='skillDescription'>Agile methodology</span>
             </div>
 
         </div>
