@@ -11,9 +11,9 @@ import findLuvVivThumbNail from '../Assets/thumbnails/findLuvThumbnail.png'
 // import projectRitter from '../Assets/videos/ProjectRitterDemo.mov'
 import projectRitterThumbnail from '../Assets/thumbnails/projectRitterThumbNail.png'
 // import teamGenerator from '../Assets/videos/random-team-gen-demo.mov'
-// import teamGeneratorThumbnail from '../Assets/thumbnails/reandom-team-gen-thumbnail.png'
+import teamGeneratorThumbnail from '../Assets/thumbnails/reandom-team-gen-thumbnail.png'
 // import rubiksCube from '../Assets/videos/RubiksCubeDemo.mov'
-// import rubiksCubeThumbnail from '../Assets/thumbnails/rubiksCubeThumbnail.png'
+import rubiksCubeThumbnail from '../Assets/thumbnails/rubiksCubeThumbnail.png'
 // import pokeDex from '../Assets/videos/pokeDexDemo.mov'
 // import pokeDexThumbnail from '../Assets/thumbnails/pokeDexThumbnail.png'
 // import tvGuide from '../Assets/videos/tvGuideDemo.mov'
@@ -59,6 +59,15 @@ const Portfolio = () => {
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/u7sE2hLOOYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     <img src={projectRitterThumbnail} height="50" alt='pic' />
                 </iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oXsrGTnkNNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    <img src={rubiksCubeThumbnail} height="50" alt='pic' />
+                </iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7aN5yAXKZlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    <img src={teamGeneratorThumbnail} height="50" alt='pic' />
+                </iframe>
+
                 {/* {createVideoDisplay(babyGame, babyGameThumbNail)} */}
                 {/* {createVideoDisplay(findLuvVid, findLuvVivThumbNail)}
                 {createVideoDisplay(projectRitter, projectRitterThumbnail)}
