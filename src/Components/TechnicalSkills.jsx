@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
 import nodeJs from '../Assets/logos/node-js-48.png'
 import javascriptIcon from '../Assets/logos/javascript-48.png'
 import reactIcon from '../Assets/logos/react-48.png'
@@ -15,9 +16,17 @@ import npmLogo from '../Assets/logos/npm-48.png'
 import webpackLogo from '../Assets/logos/webpack-48.png'
 import babelLogo from '../Assets/logos/babel-48.png'
 import agileLogo from '../Assets/logos/agile-48 (1).png'
-import netlify from '../Assets/logos/netlify-48.png'
+import netlify from '../Assets/logos/nelify-48.png'
+import surge from '../Assets/logos/surge-logo.svg'
 
 const TechnicalSkills = () => {
+    const [img, setImg] = useState('')
+
+    useEffect(() => {
+        fetch('https://www.dropbox.com/s/0tyl1tvs33f1zaj/surge-logo.svg?dl=0')
+            .then(res => res.json())
+            .then(data => setImg(data))
+    })
     return (
 
         <div className='TechnicalSkillsContainer'>
@@ -55,7 +64,8 @@ const TechnicalSkills = () => {
                 <img src={jestLogo} alt='jest icon' />
                 <img src={herokuLogo} alt='heroku icon' />
                 <img src={netlify} alt='heroku icon' />
-                <img src={'https://surge.sh/images/logos/svg/surge-logo.svg'} height="48px" width="48px" alt='surge icon' />
+                <img src={surge} height="48px" width="48px" alt='surge icon' />
+
                 <span>Jest</span>
                 <span>Heroku</span>
                 <span>Netlify</span>

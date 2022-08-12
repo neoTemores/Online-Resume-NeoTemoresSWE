@@ -2,26 +2,26 @@ import React, { useEffect } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel'
 
-import drawingApp from '../Assets/videos/drawingDemoTrim.mov'
-import drawingAppThumbnail from '../Assets/thumbnails/drawingAppThumbnail.png'
-import babyGame from '../Assets/videos/GuessBabyNameGame.mov'
+// import drawingApp from '../Assets/videos/drawingDemoTrim.mov'
+// import drawingAppThumbnail from '../Assets/thumbnails/drawingAppThumbnail.png'
+// import babyGame from '../Assets/videos/GuessBabyNameGame.mov'
 import babyGameThumbNail from '../Assets/thumbnails/babyName.png'
-import findLuvVid from '../Assets/videos/FullChatDemo.mov'
+// import findLuvVid from '../Assets/videos/FullChatDemo.mov'
 import findLuvVivThumbNail from '../Assets/thumbnails/findLuvThumbnail.png'
-import projectRitter from '../Assets/videos/ProjectRitterDemo.mov'
+// import projectRitter from '../Assets/videos/ProjectRitterDemo.mov'
 import projectRitterThumbnail from '../Assets/thumbnails/projectRitterThumbNail.png'
-import teamGenerator from '../Assets/videos/random-team-gen-demo.mov'
-import teamGeneratorThumbnail from '../Assets/thumbnails/reandom-team-gen-thumbnail.png'
-import rubiksCube from '../Assets/videos/RubiksCubeDemo.mov'
-import rubiksCubeThumbnail from '../Assets/thumbnails/rubiksCubeThumbnail.png'
-import pokeDex from '../Assets/videos/pokeDexDemo.mov'
-import pokeDexThumbnail from '../Assets/thumbnails/pokeDexThumbnail.png'
-import tvGuide from '../Assets/videos/tvGuideDemo.mov'
-import tvGuideThumbnail from '../Assets/thumbnails/tvGuideThumbnail.png'
+// import teamGenerator from '../Assets/videos/random-team-gen-demo.mov'
+// import teamGeneratorThumbnail from '../Assets/thumbnails/reandom-team-gen-thumbnail.png'
+// import rubiksCube from '../Assets/videos/RubiksCubeDemo.mov'
+// import rubiksCubeThumbnail from '../Assets/thumbnails/rubiksCubeThumbnail.png'
+// import pokeDex from '../Assets/videos/pokeDexDemo.mov'
+// import pokeDexThumbnail from '../Assets/thumbnails/pokeDexThumbnail.png'
+// import tvGuide from '../Assets/videos/tvGuideDemo.mov'
+// import tvGuideThumbnail from '../Assets/thumbnails/tvGuideThumbnail.png'
 // import simpsons from '../Assets/videos/simpsonsDemo.mov'
 // import simpsonsThumbnail from '../Assets/thumbnails/simpsonsThumbnail.png'
-import ebay from '../Assets/videos/ebayDemo.mov'
-import ebayThumbnail from '../Assets/thumbnails/ebayThumbnail.png'
+// import ebay from '../Assets/videos/ebayDemo.mov'
+// import ebayThumbnail from '../Assets/thumbnails/ebayThumbnail.png'
 
 const Portfolio = () => {
 
@@ -33,31 +33,41 @@ const Portfolio = () => {
         }
     }, [])
 
-    const handleClick = () => {
-        console.log("clicked")
-    }
 
-    const createVideoDisplay = (video, thumbnail) => {
-        return (
-            <video style={{ 'maxWidth': "90%", 'height': '90%' }} loop autoPlay controls muted>
-                <source src={video} type='video/mp4' />
-                <img src={thumbnail} height="50" alt='pic' />
-            </video>
-        )
-    }
+
+    // const createVideoDisplay = (video, thumbnail) => {
+    //     return (
+    //         <video style={{ 'maxWidth': "90%", 'height': '90%' }} loop autoPlay controls muted>
+    //             <source src={video} type='video/mp4' />
+    //             <img src={thumbnail} height="50" alt='pic' />
+    //         </video>
+    //     )
+    // }
 
     return (
         <div className='carouselMainContainer' >
             <Carousel showArrows={true} >
-                {createVideoDisplay(babyGame, babyGameThumbNail)}
-                {createVideoDisplay(findLuvVid, findLuvVivThumbNail)}
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZzzN1BS2jfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+                    <img src={babyGameThumbNail} height="50" alt='pic' />
+                </iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z5RqlOc3cz4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    <img src={findLuvVivThumbNail} height="50" alt='pic' />
+                </iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/u7sE2hLOOYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    <img src={projectRitterThumbnail} height="50" alt='pic' />
+                </iframe>
+                {/* {createVideoDisplay(babyGame, babyGameThumbNail)} */}
+                {/* {createVideoDisplay(findLuvVid, findLuvVivThumbNail)}
                 {createVideoDisplay(projectRitter, projectRitterThumbnail)}
                 {createVideoDisplay(teamGenerator, teamGeneratorThumbnail)}
                 {createVideoDisplay(rubiksCube, rubiksCubeThumbnail)}
                 {createVideoDisplay(drawingApp, drawingAppThumbnail)}
                 {createVideoDisplay(pokeDex, pokeDexThumbnail)}
                 {createVideoDisplay(tvGuide, tvGuideThumbnail)}
-                {createVideoDisplay(ebay, ebayThumbnail)}
+                {createVideoDisplay(ebay, ebayThumbnail)} */}
                 {/* {createVideoDisplay(simpsons, simpsonsThumbnail)} */}
             </Carousel>
         </div>
