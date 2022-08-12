@@ -47,7 +47,7 @@ const Portfolio = () => {
     return (
         <div className='carouselMainContainer' >
             <Carousel showArrows={true} >
-                <iframe width="560" height="415" src="https://www.youtube.com/embed/ZzzN1BS2jfM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                <iframe width="560==" height="415" src="https://www.youtube.com/embed/ZzzN1BS2jfM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
 
                     <img src={babyGameThumbNail} height="50" alt='pic' />
                 </iframe>
@@ -68,19 +68,19 @@ const Portfolio = () => {
                     <img src={teamGeneratorThumbnail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="415" src="https://www.youtube.com/embed/GE3VZwhK0Hs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/GE3VZwhK0Hs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={pokeDexThumbnail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="415" src="https://www.youtube.com/embed/iogcURRFVLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/iogcURRFVLI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={drawingAppThumbnail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="415" src="https://www.youtube.com/embed/TMpHwaeaxuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/TMpHwaeaxuI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={ebayThumbnail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="415" src="https://www.youtube.com/embed/iUtceOoW4iE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/iUtceOoW4iE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={tvGuideThumbnail} height="50" alt='pic' />
                 </iframe>
 

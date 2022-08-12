@@ -228,8 +228,8 @@ body,
 
 
 .carouselMainContainer {
-    /* max-width: 90vw; */
-    /* margin: auto; */
+    max-width: 90vw;
+    margin: auto;
 }
 
 .control-dots {
