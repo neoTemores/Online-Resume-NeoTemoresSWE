@@ -5,8 +5,9 @@ body,
     padding: 0;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #222;
-    color: #fff
+    /* background-color: #222;
+    color: #fff */
+    background-color: #fff;
 }
 
 #root {
@@ -61,9 +62,15 @@ body,
     transform: translateX(2vw);
 } */
 
+.activeNavTitle {
+    color: blue;
+    /* font-style: italic; */
+}
+
 .rotateArrowOpen {
     animation: rotateArrowOpen .5s;
     transform: rotate(180deg);
+    color: blue
 }
 
 @keyframes rotateArrowOpen {
@@ -92,7 +99,7 @@ body,
 }
 
 .navLI {
-    border: 1px solid #555;
+    border: 1px solid #5555;
     padding: 1vw;
     box-shadow: 5px 5px 5px #5555;
     box-shadow: 5px 5px 5px #aaa;
@@ -166,15 +173,15 @@ body,
 }
 
 .skillLogoBackgroundSquare {
-    background-color: #eee;
-    border-radius: 5px;
+    /* background-color: #eee;
+    border-radius: 5px; */
     /* height: fit-content */
 }
 
-.skillLogoBackgroundCircle {
+/* .skillLogoBackgroundCircle {
     background-color: #eee;
     border-radius: 9999px;
-}
+} */
 
 .frontEndSkillsContainer,
 .backEndSkillsContainer,

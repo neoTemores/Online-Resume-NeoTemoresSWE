@@ -37,15 +37,21 @@ const Home = () => {
 
     useEffect(() => {
         for (const key in showSkill) {
-            let element = document.querySelector(`.${key}`)
+            let arrow = document.querySelector(`.${key}`)
+            let title = document.getElementById(key)
+
             if (showSkill[key]) {
-                element.classList.add('rotateArrowOpen')
-                element.classList.remove('rotateArrowClosed')
+                arrow.classList.add('rotateArrowOpen')
+                arrow.classList.remove('rotateArrowClosed')
+
+                title.classList.add('activeNavTitle')
             }
 
             else {
-                element.classList.remove('rotateArrowOpen')
-                element.classList.add('rotateArrowClosed')
+                arrow.classList.remove('rotateArrowOpen')
+                arrow.classList.add('rotateArrowClosed')
+
+                title.classList.remove('activeNavTitle')
             }
         }
     }, [showSkill])
