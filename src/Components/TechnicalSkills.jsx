@@ -31,50 +31,50 @@ const TechnicalSkills = () => {
 
         <div className='TechnicalSkillsContainer'>
 
-            <p>Front End |</p>
+            <p className="firstTechSkillTitle">Front End</p>
             <div className='frontEndSkillsContainer'>
                 <img src={javascriptIcon} alt='JS icon' />
                 <img src={reactIcon} alt='react icon' />
                 <img src={htmlIcon} alt='html icon' />
                 <img src={cssIcon} alt='css icon' />
-                <span>JavaScript</span>
-                <span>React</span>
-                <span>HTML5</span>
-                <span>CSS3</span>
+                <span className='skillDescription'>JavaScript</span>
+                <span className='skillDescription'>React</span>
+                <span className='skillDescription'>HTML5</span>
+                <span className='skillDescription'>CSS3</span>
             </div>
 
             <br />
 
-            <p>Back End |</p>
+            <p className="techSkillTitle">Back End</p>
             <div className='backEndSkillsContainer'>
                 <img src={nodeJs} alt='node icon' />
                 <img className='skillLogoBackgroundSquare' src={expressIcon} alt='express icon' />
                 <img src={postgresIcon} alt='node icon' />
                 <img src={restApi} alt='rest icon' />
-                <span>Node.js</span>
-                <span>Express</span>
-                <span>PostgreSQL</span>
-                <span>RESTful API Development</span>
+                <span className='skillDescription'>Node.js</span>
+                <span className='skillDescription'>Express</span>
+                <span className='skillDescription'>PostgreSQL</span>
+                <span className='skillDescription'>RESTful API Development</span>
             </div>
 
             <br />
 
-            <p>Testing/Deployment |</p>
+            <p className="techSkillTitle">Testing/Deployment</p>
             <div className='testingDeploymentSkillsContainer'>
                 <img src={jestLogo} alt='jest icon' />
                 <img src={herokuLogo} alt='heroku icon' />
                 <img src={netlify} alt='heroku icon' />
                 <img src={surge} height="48px" width="48px" alt='surge icon' />
 
-                <span>Jest</span>
-                <span>Heroku</span>
-                <span>Netlify</span>
-                <span>Surge</span>
+                <span className='skillDescription'>Jest</span>
+                <span className='skillDescription'>Heroku</span>
+                <span className='skillDescription'>Netlify</span>
+                <span className='skillDescription'>Surge</span>
             </div>
 
             <br />
 
-            <p>Developer Tools |</p>
+            <p className="techSkillTitle">Developer Tools</p>
             <div className='devToolsSkillsContainer'>
                 <img src={gitLogo} alt='git icon' />
                 <img className="skillLogoBackgroundCircle" src={githubLogo} alt='github icon' />

@@ -172,6 +172,24 @@ body,
     /* padding: 1vw; */
 }
 
+
+.techSkillTitle,
+.firstTechSkillTitle {
+    font-weight: bold;
+    border-top: 1px solid #5555;
+    padding: 1vw;
+    /* width: fit-content; */
+}
+
+.firstTechSkillTitle {
+    border: none;
+    padding-top: 0;
+}
+
+.skillDescription {
+    font-style: italic;
+}
+
 .skillLogoBackgroundSquare {
     /* background-color: #eee;
     border-radius: 5px; */
@@ -205,6 +223,8 @@ body,
     justify-items: center;
     text-align: center;
 }
+
+
 
 
 .carouselMainContainer {
