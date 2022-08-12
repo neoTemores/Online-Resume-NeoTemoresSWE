@@ -15,6 +15,11 @@ const Links = () => {
                 <a href='https://github.com/neoTemores' rel="noreferrer" target="_blank"><img src={gitHub} height='50' alt='github' /></a>
 
                 <div className='linksWithTextDiv'>
+                    <a href="mailto:TemoresNeo@gmail.com"><img src={emailIcon} height='50' alt='email' /></a>
+                    <a className="linksAnchorTag" href="mailto:TemoresNeo@gmail.com" >Email me</a>
+                </div>
+
+                <div className='linksWithTextDiv'>
                     <a href={pdf} target="_blank" rel="noreferrer"><img src={openResume} height='50' alt='open resume' /></a>
                     <a className="linksAnchorTag" href={pdf} target="_blank" rel="noreferrer">View resume</a>
                 </div>
@@ -24,10 +29,7 @@ const Links = () => {
                     <a className="linksAnchorTag" href={pdf} download>Download resume</a>
                 </div>
 
-                <div className='linksWithTextDiv'>
-                    <a href="mailto:TemoresNeo@gmail.com"><img src={emailIcon} height='50' alt='email' /></a>
-                    <a className="linksAnchorTag" href="mailto:TemoresNeo@gmail.com" >Email me</a>
-                </div>
+
 
             </div>
 

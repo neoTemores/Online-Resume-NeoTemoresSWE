@@ -268,9 +268,10 @@ button.control-arrow.control-prev {
 
 .linksContainer {
     display: flex;
-    gap: 1vw;
+    gap: 1.5vw;
     align-items: center;
     justify-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
