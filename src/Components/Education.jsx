@@ -3,13 +3,13 @@ import React from "react";
 const Education = () => {
   const createEducationDiv = (schoolName, program, gradDate, description) => {
     return (
-      <>
+      <div>
         <div className="educationProgramSchool">
           <h3>{program}</h3> <h4>{schoolName}</h4>
           <h6 className="gradDate">Graduation date: {gradDate}</h6>
         </div>
-        <p>{description}</p>
-      </>
+        <p className="educationDescription">{description}</p>
+      </div>
     );
   };
   return (

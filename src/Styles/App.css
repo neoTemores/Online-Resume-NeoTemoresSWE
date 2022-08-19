@@ -287,7 +287,11 @@ button.control-arrow.control-prev {
     justify-items: center;
 }
 
-
+div.educationMainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw
+}
 
 div .educationProgramSchool{
     display: flex;
@@ -301,4 +305,8 @@ div .educationProgramSchool{
 
 div.gradDate{
 
+}
+
+p.educationDescription{
+    margin-top: 1vw;
 }
