@@ -288,25 +288,38 @@ button.control-arrow.control-prev {
 }
 
 div.educationMainContainer{
+   display:grid;
+   gap: 5vw;
+   padding: 1vw
+}
+
+.educationDiv{
     display: flex;
     flex-direction: column;
     gap: 2vw
 }
 
-div .educationProgramSchool{
+.educationUL{
+    list-style: none;
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
+    justify-content: space-between;
     justify-items: center;
     align-items: flex-end;
     gap: 1vw;
     flex-wrap: wrap;
 }
-
-div.gradDate{
+.edProgram{
+    border-bottom: 1px solid #555;
+}
+.schoolName{
+    font-style: italic;
+}
+.gradDate{
 
 }
 
 p.educationDescription{
     margin-top: 1vw;
+    margin-left: 1vw;
 }
