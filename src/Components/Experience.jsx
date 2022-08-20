@@ -6,8 +6,9 @@ const Experience = () => {
       <div>
         <h3>{title}</h3>
         <h4>{company}</h4>
-        <h5>{startDate}</h5>
-        <h5>{endDate}</h5>
+        <h5>
+          {startDate} - {endDate}
+        </h5>
       </div>
     );
   };
