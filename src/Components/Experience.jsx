@@ -1,24 +1,35 @@
+import { findByTitle } from "@testing-library/react";
 import React from "react";
 
 const Experience = () => {
-  const createWorkExp = (title, company, startDate, endDate) => {
+  const createWorkExp = (title, company, startDate, endDate, description) => {
     return (
-      <div>
-        <h3>{title}</h3>
-        <h4>{company}</h4>
-        <h5>
-          {startDate} - {endDate}
-        </h5>
-      </div>
+      <div className="educationDiv">
+      <ul className="educationUL">
+        <li>
+          <h3 className="edProgram">{title}</h3>
+        </li>
+        <li>
+          <h4 className="schoolName">{company}</h4>
+        </li>
+        <li>
+          <h5 className="gradDate">{startDate} - {endDate}</h5>{" "}
+        </li>
+      </ul>
+
+      <p className="educationDescription">{description}</p>
+    </div>
     );
   };
   return (
-    <div className="mainExperienceContainer">
+    
+    <div className="educationMainContainer">
       {createWorkExp(
         "Cavalry Scout, Sergeant",
-        "U.S. Army",
+        "U.S. Army, Active Duty",
         "Apr 2019",
-        "Aug 2022"
+        "Aug 2022", 
+        "Supervised, trained, and mentored up to 15 Soldiers at any given time.Obtained additional responsibility tracking and maintaining all records and administrative data for 90 Soldiers.Worked closely on a daily basis with higher ranking officials to ensure tasks and objectives were completed"
       )}
       {createWorkExp(
         "Service Advisor",
