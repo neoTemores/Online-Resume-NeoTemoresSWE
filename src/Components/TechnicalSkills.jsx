@@ -18,15 +18,14 @@ import babelLogo from '../Assets/logos/babel-48.png'
 import agileLogo from '../Assets/logos/agile-48 (1).png'
 import netlify from '../Assets/logos/nelify-48.png'
 import surge from '../Assets/logos/surge-logo.svg'
+import macOS from '../Assets/logos/mac-logo-48.png'
+import windowsOS from '../Assets/logos/windows-10-48.png'
+import cli from '../Assets/logos/command-line-48.png'
+import vsCode from '../Assets/logos/visual-studio-code-2019-48.png'
+
 
 const TechnicalSkills = () => {
-    const [img, setImg] = useState('')
 
-    useEffect(() => {
-        fetch('https://www.dropbox.com/s/0tyl1tvs33f1zaj/surge-logo.svg?dl=0')
-            .then(res => res.json())
-            .then(data => setImg(data))
-    })
     return (
 
         <div className='TechnicalSkillsContainer'>
@@ -59,7 +58,7 @@ const TechnicalSkills = () => {
 
             <br />
 
-            <p className="techSkillTitle">Testing/Deployment</p>
+            <p className="techSkillTitle">Testing & Deployment</p>
             <div className='testingDeploymentSkillsContainer'>
                 <img src={jestLogo} alt='jest icon' />
                 <img src={herokuLogo} alt='heroku icon' />
@@ -76,18 +75,57 @@ const TechnicalSkills = () => {
 
             <p className="techSkillTitle">Developer Tools</p>
             <div className='devToolsSkillsContainer'>
-                <img src={gitLogo} alt='git icon' />
-                <img className="skillLogoBackgroundCircle" src={githubLogo} alt='github icon' />
-                <img src={npmLogo} alt='npm icon' />
-                <img src={webpackLogo} alt='webpack icon' />
-                <img src={babelLogo} alt='babel icon' />
-                <img src={agileLogo} alt='agile icon' />
-                <span className='skillDescription'>Git</span>
-                <span className='skillDescription'>GitHub</span>
-                <span className='skillDescription'>NPM</span>
-                <span className='skillDescription'>Webpack</span>
-                <span className='skillDescription'>Babel</span>
-                <span className='skillDescription'>Agile methodology</span>
+
+                <div className='devToolItem'>
+                    <img src={gitLogo} alt='git icon' />
+                    <span className='skillDescription'>Git</span>
+                </div>
+
+                <div className='devToolItem'>
+                    <img className="skillLogoBackgroundCircle" src={githubLogo} alt='github icon' />
+                    <span className='skillDescription'>GitHub</span>
+                </div>
+
+                <div className='devToolItem'>
+                    <img src={npmLogo} alt='npm icon' />
+                    <span className='skillDescription'>NPM</span>
+                </div>
+
+                <div className='devToolItem'>
+                    <img src={webpackLogo} alt='webpack icon' />
+                    <span className='skillDescription'>Webpack</span>
+                </div>
+
+                <div className='devToolItem'>
+                    <img src={babelLogo} alt='babel icon' />
+                    <span className='skillDescription'>Babel</span>
+                </div>
+
+                <div className='devToolItem'>
+                    <img src={agileLogo} alt='agile icon' />
+                    <span className='skillDescription'>Agile methodology</span>
+                </div>
+
+                <div className='devToolItem'>
+                    <img src={vsCode} alt='vsCode icon' />
+                    <span className='skillDescription'>Visual Studio Code</span>
+                </div>
+
+                <div className='devToolItem'>
+                    <img src={cli} alt='cli icon' />
+                    <span className='skillDescription'>Command Line Interface</span>
+                </div>
+
+                <div className='devToolItem'>
+                    <img src={macOS} alt='macOS icon' />
+                    <span className='skillDescription'>Mac OS</span>
+                </div>
+
+                <div className='devToolItem'>
+                    <img src={windowsOS} alt='windowsOS icon' />
+                    <span className='skillDescription'>Windows OS</span>
+                </div>
+
             </div>
 
         </div>
