@@ -9,16 +9,33 @@ import emailIcon from "../Assets/logos/email-icon.png";
 const Links = () => {
   return (
     <div className="linksContainer">
-      <a
-        href="https://www.linkedin.com/in/neo-temores/"
-        rel="noreferrer"
-        target="_blank">
-        <img src={linkedIn} height="50" alt="linkedIn" />
-      </a>
 
-      <a href="https://github.com/neoTemores" rel="noreferrer" target="_blank">
-        <img src={gitHub} height="50" alt="github" />
-      </a>
+      <div className="linksWithTextDiv">
+        <a
+          href="https://www.linkedin.com/in/neo-temores/"
+          rel="noreferrer"
+          target="_blank">
+          <img src={linkedIn} height="50" alt="linkedIn" />
+        </a>
+        <a className="linksAnchorTag"
+          href="https://www.linkedin.com/in/neo-temores/"
+          target="_blank"
+          rel="noreferrer">
+          LinkedIn
+        </a>
+      </div>
+
+      <div className="linksWithTextDiv">
+        <a href="https://github.com/neoTemores" rel="noreferrer" target="_blank">
+          <img src={gitHub} height="50" alt="github" />
+        </a>
+        <a className="linksAnchorTag"
+          href="https://github.com/neoTemores"
+          target="_blank"
+          rel="noreferrer">
+          GitHub
+        </a>
+      </div>
 
       <div className="linksWithTextDiv">
         <a href="mailto:TemoresNeo@gmail.com">
