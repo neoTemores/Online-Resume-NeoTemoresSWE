@@ -4,7 +4,7 @@ body,
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
     /* background-color: #222;
     color: #fff */
     background-color: #fff;
@@ -34,6 +34,10 @@ body,
 
     .SummaryContainer {
         flex-wrap: wrap;
+    }
+
+    .linksContainer {
+        display: grid;
     }
 }
 
@@ -269,11 +273,9 @@ button.control-arrow.control-prev {
 .linksContainer {
     display: flex;
     gap: 1.5vw;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
 
 .linksAnchorTag,
 .linksAnchorTag:visited {
@@ -282,24 +284,27 @@ button.control-arrow.control-prev {
     font-style: italic;
 }
 
+
 .linksWithTextDiv {
     display: grid;
     justify-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-div.educationMainContainer{
-   display:grid;
-   gap: 5vw;
-   padding: 1vw
+div.educationMainContainer {
+    display: grid;
+    gap: 5vw;
+    padding: 1vw
 }
 
-.educationDiv{
+.educationDiv {
     display: flex;
     flex-direction: column;
     gap: 2vw
 }
 
-.educationUL{
+.educationUL {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -309,24 +314,24 @@ div.educationMainContainer{
     gap: 1vw;
     flex-wrap: wrap;
 }
-.edProgram{
+
+.edProgram {
     border-bottom: 1px solid #555;
 }
 
-.schoolName{
+.schoolName {
     font-style: italic;
 }
-.gradDate{
 
-}
+.gradDate {}
 
-p.educationDescription{
+p.educationDescription {
     margin-top: 1vw;
     margin-left: 1vw;
 }
 
-@media (max-width: 860px){
-    .educationUL{
+@media (max-width: 860px) {
+    .educationUL {
         flex-direction: column;
         /* justify-items: left;
         justify-content: left; */
