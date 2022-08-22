@@ -25,6 +25,16 @@ import vsCode from '../Assets/logos/visual-studio-code-2019-48.png'
 
 
 const TechnicalSkills = () => {
+    const [innerWidth, setInnerWidth] = useState(null)
+
+    useEffect(() => {
+        setInnerWidth(window.innerWidth)
+
+        window.addEventListener("resize", () => {
+            setInnerWidth(window.innerWidth)
+        }
+        )
+    }, [])
 
     return (
 
@@ -108,12 +118,12 @@ const TechnicalSkills = () => {
 
                 <div className='devToolItem'>
                     <img src={vsCode} alt='vsCode icon' />
-                    <span className='skillDescription'>Visual Studio Code</span>
+                    <span className='skillDescription'>{+innerWidth > 600 ? 'Visual Studio Code' : 'VS Code'}</span>
                 </div>
 
                 <div className='devToolItem'>
                     <img src={cli} alt='cli icon' />
-                    <span className='skillDescription'>Command Line Interface</span>
+                    <span className='skillDescription'>{+innerWidth > 600 ? "Command Line Interface" : 'CLI'}</span>
                 </div>
 
                 <div className='devToolItem'>
