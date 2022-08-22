@@ -34,16 +34,6 @@ const Portfolio = () => {
     }, [])
 
 
-
-    // const createVideoDisplay = (video, thumbnail) => {
-    //     return (
-    //         <video style={{ 'maxWidth': "90%", 'height': '90%' }} loop autoPlay controls muted>
-    //             <source src={video} type='video/mp4' />
-    //             <img src={thumbnail} height="50" alt='pic' />
-    //         </video>
-    //     )
-    // }
-
     return (
         <div className='carouselMainContainer' >
             <Carousel showArrows={true} >
