@@ -43,7 +43,7 @@ const TechnicalSkills = () => {
             <p className="firstTechSkillTitle">Front End</p>
             <div className='frontEndSkillsContainer'>
                 <img src={javascriptIcon} alt='JS icon' />
-                <img src={reactIcon} alt='react icon' />
+                <img className='skillLogoBackgroundCircle' src={reactIcon} alt='react icon' />
                 <img src={htmlIcon} alt='html icon' />
                 <img src={cssIcon} alt='css icon' />
                 <span className='skillDescription'>JavaScript</span>

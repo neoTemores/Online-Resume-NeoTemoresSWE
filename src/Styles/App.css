@@ -183,8 +183,13 @@ body {
 
 }
 
+.HeaderContainer h1 {
+    font-size: 2.5rem;
+}
+
 .HeaderContainer p {
     font-style: italic;
+    font-size: 1.2rem;
     /* font-family: fantasy; */
 }
 
@@ -240,14 +245,17 @@ body {
 
 .skillLogoBackgroundSquare {
     background-color: #eee;
+    background-color: rgba(255, 255, 255, .5);
+
     border-radius: 5px;
     height: fit-content
 }
 
-/* .skillLogoBackgroundCircle {
-    background-color: #eee;
+.skillLogoBackgroundCircle {
+    /* background-color: #9995; */
+    background-color: rgba(255, 255, 255, .5);
     border-radius: 9999px;
-} */
+}
 
 .frontEndSkillsContainer,
 .backEndSkillsContainer,
