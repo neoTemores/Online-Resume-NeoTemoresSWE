@@ -27,7 +27,7 @@ const Links = () => {
 
       <div className="linksWithTextDiv">
         <a href="https://github.com/neoTemores" rel="noreferrer" target="_blank">
-          <img src={gitHub} height="50" alt="github" />
+          <img className="skillLogoBackgroundCircle" src={gitHub} height="50" alt="github" />
         </a>
         <a className="linksAnchorTag"
           href="https://github.com/neoTemores"
@@ -42,7 +42,7 @@ const Links = () => {
           <img src={emailIcon} height="50" alt="email" />
         </a>
         <a className="linksAnchorTag" href="mailto:TemoresNeo@gmail.com">
-          Email me
+          Email
         </a>
       </div>
 
