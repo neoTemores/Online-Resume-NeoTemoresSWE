@@ -34,7 +34,7 @@ const TechnicalSkills = ({ innerWidth }) => {
             <p className="firstTechSkillTitle">Front End</p>
             <div className='frontEndSkillsContainer'>
                 <img src={javascriptIcon} alt='JS icon' />
-                <img className='skillLogoBackgroundCircle' src={reactIcon} alt='react icon' />
+                <img className='skillLogoBackgroundCircleDark' src={reactIcon} alt='react icon' />
                 <img src={htmlIcon} alt='html icon' />
                 <img src={cssIcon} alt='css icon' />
                 <span className='skillDescription'>JavaScript</span>
@@ -47,7 +47,7 @@ const TechnicalSkills = ({ innerWidth }) => {
 
             <p className="techSkillTitle">Back End</p>
             <div className='backEndSkillsContainer'>
-                <img src={nodeJs} alt='node icon' />
+                <img className='skillLogoBackgroundCircleDark' src={nodeJs} alt='node icon' />
                 <img className='skillLogoBackgroundSquare' src={expressIcon} alt='express icon' />
                 <img src={postgresIcon} alt='node icon' />
                 <img src={restApi} alt='rest icon' />
