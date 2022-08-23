@@ -336,9 +336,14 @@ button.control-arrow.control-prev {
     cursor: pointer;
 }
 
-.babyGameVid::after {
+/* .babyGameVid::after {
     content: 'test';
-}
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
 
 .linksContainer {
     display: flex;
@@ -406,32 +411,20 @@ p.educationDescription {
     margin-left: 1vw;
 }
 
-/* .SummaryContainer,
-.TechnicalSkillsContainer,
-.carouselMainContainer,
-.educationMainContainer,
-.linksContainer,
-.skillInfo {
-    background-color: red;
-} */
-
 .navUL>*,
 .HeaderContainer {
     background-color: rgba(0, 0, 0, .25);
     /* background-color: rgba(255, 255, 255, .15); */
     /* background-color: #9995; */
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .ufoContainer {
-    /* margin-top: auto; */
     margin-top: 5vh;
 }
 
 .ufoImg {
-    /* position: relative;
-    bottom: 0 */
     animation: moveUfo 10s infinite
 }
 
@@ -439,7 +432,6 @@ p.educationDescription {
 .divider {
     width: 100%;
     border: 1px solid #999;
-    /* border: 1px solid blue; */
 }
 
 @keyframes moveUfo {

@@ -1,26 +1,14 @@
 import React, { useEffect } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel'
-
-// import drawingApp from '../Assets/videos/drawingDemoTrim.mov'
 import drawingAppThumbnail from '../Assets/thumbnails/drawingAppThumbnail.png'
-// import babyGame from '../Assets/videos/GuessBabyNameGame.mov'
 import babyGameThumbNail from '../Assets/thumbnails/babyName.png'
-// import findLuvVid from '../Assets/videos/FullChatDemo.mov'
 import findLuvVivThumbNail from '../Assets/thumbnails/findLuvThumbnail.png'
-// import projectRitter from '../Assets/videos/ProjectRitterDemo.mov'
 import projectRitterThumbnail from '../Assets/thumbnails/projectRitterThumbNail.png'
-// import teamGenerator from '../Assets/videos/random-team-gen-demo.mov'
 import teamGeneratorThumbnail from '../Assets/thumbnails/reandom-team-gen-thumbnail.png'
-// import rubiksCube from '../Assets/videos/RubiksCubeDemo.mov'
 import rubiksCubeThumbnail from '../Assets/thumbnails/rubiksCubeThumbnail.png'
-// import pokeDex from '../Assets/videos/pokeDexDemo.mov'
 import pokeDexThumbnail from '../Assets/thumbnails/pokeDexThumbnail.png'
-// import tvGuide from '../Assets/videos/tvGuideDemo.mov'
 import tvGuideThumbnail from '../Assets/thumbnails/tvGuideThumbnail.png'
-// import simpsons from '../Assets/videos/simpsonsDemo.mov'
-// import simpsonsThumbnail from '../Assets/thumbnails/simpsonsThumbnail.png'
-// import ebay from '../Assets/videos/ebayDemo.mov'
 import ebayThumbnail from '../Assets/thumbnails/ebayThumbnail.png'
 
 const Portfolio = ({ innerWidth }) => {
