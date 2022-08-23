@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { GoPrimitiveDot } from "react-icons/go";
+import { CgBorderStyleSolid } from "react-icons/cg"
 
 const Education = () => {
   const createEducationDiv = (schoolName, program, gradDate, description) => {
@@ -29,6 +30,7 @@ const Education = () => {
         "Aug 2022",
         "18-week software engineering immersive program with over 1000+ hours of coding. Full-Stack development with JavaScript, React, HTML, CSS, Express, Node and PostgreSQL in an AGILE environment "
       )}
+      <div className="divider"> </div>
       {createEducationDiv(
         "DeVry University",
         "B.S. Computer Information Sys, Software ",

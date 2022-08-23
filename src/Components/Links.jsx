@@ -1,5 +1,5 @@
 import React from "react";
-import pdf from "../Assets/NeoTemores-ResumeSWE.pdf";
+import pdf from "../Assets/Neo-Temores-SWE-Resume.pdf";
 import linkedIn from "../Assets/logos/Linkedin-logo-on-transparent-Background-PNG-.png";
 import gitHub from "../Assets/logos/github-48.png";
 import openResume from "../Assets/logos/resume-open.png";

@@ -28,8 +28,8 @@ const Portfolio = ({ innerWidth }) => {
     return (
         <div className='carouselMainContainer' >
             <Carousel showArrows={true} >
-                <iframe width="560" height={innerWidth > 600 ? '415' : '315'} src="https://www.youtube.com/embed/ZzzN1BS2jfM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
 
+                <iframe className="babyGameVid" width="560" height={innerWidth > 600 ? '415' : '315'} src="https://www.youtube.com/embed/ZzzN1BS2jfM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={babyGameThumbNail} height="50" alt='pic' />
                 </iframe>
 

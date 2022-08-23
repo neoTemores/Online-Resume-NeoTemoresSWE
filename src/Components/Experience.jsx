@@ -32,6 +32,8 @@ const Experience = () => {
         "Aug 2022",
         "Supervised, trained, and mentored up to 15 Soldiers at any given time.Obtained additional responsibility tracking and maintaining all records and administrative data for 90 Soldiers.Worked closely on a daily basis with higher ranking officials to ensure tasks and objectives were completed"
       )}
+      <div className="divider"> </div>
+
       {createWorkExp(
         "Service Advisor",
         "Berts Mega Mall service dept.",

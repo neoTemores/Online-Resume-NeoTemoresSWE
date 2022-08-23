@@ -330,6 +330,9 @@ button.control-arrow.control-prev {
     cursor: pointer;
 }
 
+.babyGameVid::after {
+    content: 'test';
+}
 
 .linksContainer {
     display: flex;
@@ -424,6 +427,13 @@ p.educationDescription {
     /* position: relative;
     bottom: 0 */
     animation: moveUfo 10s infinite
+}
+
+
+.divider {
+    width: 100%;
+    border: 1px solid #999;
+    /* border: 1px solid blue; */
 }
 
 @keyframes moveUfo {
