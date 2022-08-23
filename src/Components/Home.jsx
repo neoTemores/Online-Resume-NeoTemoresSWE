@@ -7,8 +7,8 @@ import Experience from './Experience';
 import Education from './Education';
 import Links from './Links';
 
-import { BsChevronUp, BsChevronDown } from 'react-icons/bs'
 import { FaChevronDown } from 'react-icons/fa'
+import ufo2 from '../Assets/icons8-spaceship-66 (1).png'
 
 const Home = () => {
     const [showSkill, setShowSkill] = useState({
@@ -118,6 +118,10 @@ const Home = () => {
 
                 </ul>
             </nav>
+
+            <div className='ufoContainer'>
+                <img className="ufoImg" src={ufo2} alt='ufo' />
+            </div>
         </div>
     )
 }
