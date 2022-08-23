@@ -33,6 +33,11 @@ const Home = () => {
                 [id]: !prevState[id]
             }
         })
+        setTimeout(() => {
+            let activeDiv = document.getElementById(id)
+            activeDiv.scrollIntoView({ behavior: "smooth" })
+        }, 100)
+
     }
 
     useEffect(() => {
