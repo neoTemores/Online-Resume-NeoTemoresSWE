@@ -24,17 +24,8 @@ import cli from '../Assets/logos/command-line-48.png'
 import vsCode from '../Assets/logos/visual-studio-code-2019-48.png'
 
 
-const TechnicalSkills = () => {
-    const [innerWidth, setInnerWidth] = useState(null)
+const TechnicalSkills = ({ innerWidth }) => {
 
-    useEffect(() => {
-        setInnerWidth(window.innerWidth)
-
-        window.addEventListener("resize", () => {
-            setInnerWidth(window.innerWidth)
-        }
-        )
-    }, [])
 
     return (
 

@@ -23,54 +23,45 @@ import tvGuideThumbnail from '../Assets/thumbnails/tvGuideThumbnail.png'
 // import ebay from '../Assets/videos/ebayDemo.mov'
 import ebayThumbnail from '../Assets/thumbnails/ebayThumbnail.png'
 
-const Portfolio = () => {
-
-    useEffect(() => {
-
-        if (window.innerWidth < 900) {
-            let videos = document.querySelectorAll('video')
-            videos.forEach(elem => elem.pause())
-        }
-    }, [])
-
+const Portfolio = ({ innerWidth }) => {
 
     return (
         <div className='carouselMainContainer' >
             <Carousel showArrows={true} >
-                <iframe width="560==" height="415" src="https://www.youtube.com/embed/ZzzN1BS2jfM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                <iframe width="560" height={innerWidth > 600 ? '415' : '315'} src="https://www.youtube.com/embed/ZzzN1BS2jfM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
 
                     <img src={babyGameThumbNail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="415" src="https://www.youtube.com/embed/Z5RqlOc3cz4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                <iframe width="560" height={innerWidth > 600 ? '415' : '315'} src="https://www.youtube.com/embed/Z5RqlOc3cz4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={findLuvVivThumbNail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="415" src="https://www.youtube.com/embed/u7sE2hLOOYA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                <iframe width="560" height={innerWidth > 600 ? '415' : '315'} src="https://www.youtube.com/embed/u7sE2hLOOYA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={projectRitterThumbnail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="415" src="https://www.youtube.com/embed/oXsrGTnkNNQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                <iframe width="560" height={innerWidth > 600 ? '415' : '315'} src="https://www.youtube.com/embed/oXsrGTnkNNQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={rubiksCubeThumbnail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="415" src="https://www.youtube.com/embed/7aN5yAXKZlo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                <iframe width="560" height={innerWidth > 600 ? '415' : '315'} src="https://www.youtube.com/embed/7aN5yAXKZlo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={teamGeneratorThumbnail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="415" src="https://www.youtube.com/embed/GE3VZwhK0Hs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                <iframe width="560" height={innerWidth > 600 ? '415' : '315'} src="https://www.youtube.com/embed/GE3VZwhK0Hs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={pokeDexThumbnail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="415" src="https://www.youtube.com/embed/iogcURRFVLI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                <iframe width="560" height={innerWidth > 600 ? '415' : '315'} src="https://www.youtube.com/embed/iogcURRFVLI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={drawingAppThumbnail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="415" src="https://www.youtube.com/embed/TMpHwaeaxuI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                <iframe width="560" height={innerWidth > 600 ? '415' : '315'} src="https://www.youtube.com/embed/TMpHwaeaxuI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={ebayThumbnail} height="50" alt='pic' />
                 </iframe>
 
-                <iframe width="560" height="415" src="https://www.youtube.com/embed/iUtceOoW4iE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                <iframe width="560" height={innerWidth > 600 ? '415' : '315'} src="https://www.youtube.com/embed/iUtceOoW4iE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={tvGuideThumbnail} height="50" alt='pic' />
                 </iframe>
 

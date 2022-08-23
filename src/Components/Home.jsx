@@ -11,6 +11,17 @@ import { FaChevronDown } from 'react-icons/fa'
 import ufo2 from '../Assets/icons8-spaceship-66 (1).png'
 
 const Home = () => {
+    const [innerWidth, setInnerWidth] = useState(null)
+
+    useEffect(() => {
+        setInnerWidth(window.innerWidth)
+
+        window.addEventListener("resize", () => {
+            setInnerWidth(window.innerWidth)
+        }
+        )
+    }, [])
+
     const [showSkill, setShowSkill] = useState({
         'Summary': false,
         'TechnicalSkills': false,
@@ -84,7 +95,7 @@ const Home = () => {
                         </div>
                     </li>
 
-                    {showSkill.TechnicalSkills && <li className='navLI skillInfo'><TechnicalSkills /></li>}
+                    {showSkill.TechnicalSkills && <li className='navLI skillInfo'><TechnicalSkills innerWidth={innerWidth} /></li>}
 
                     <li onClick={handleClick} id='Portfolio' className='navLI'>
                         <div className='navlistTitle'>
@@ -92,7 +103,7 @@ const Home = () => {
                         </div>
                     </li>
 
-                    {showSkill.Portfolio && <li className='navLI skillInfo'><Portfolio /></li>}
+                    {showSkill.Portfolio && <li className='navLI skillInfo'><Portfolio innerWidth={innerWidth} /></li>}
 
                     <li onClick={handleClick} id='Experience' className='navLI'>
                         <div className='navlistTitle'>
