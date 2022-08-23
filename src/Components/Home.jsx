@@ -22,7 +22,6 @@ const Home = () => {
 
     const handleClick = (e) => {
         let id = e.currentTarget.id
-        if (showSkill[id]) { window.scrollTo(0, 0) }
         setShowSkill((prevState) => {
             return {
                 'Summary': false,
@@ -34,6 +33,8 @@ const Home = () => {
                 [id]: !prevState[id]
             }
         })
+
+        if (showSkill[id]) { return window.scrollTo(0, 0) }
 
         setTimeout(() => {
             let activeDiv = document.getElementById(id)
