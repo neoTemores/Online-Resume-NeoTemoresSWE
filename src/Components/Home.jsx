@@ -22,6 +22,7 @@ const Home = () => {
 
     const handleClick = (e) => {
         let id = e.currentTarget.id
+        if (showSkill[id]) { window.scrollTo(0, 0) }
         setShowSkill((prevState) => {
             return {
                 'Summary': false,
@@ -33,6 +34,7 @@ const Home = () => {
                 [id]: !prevState[id]
             }
         })
+
         setTimeout(() => {
             let activeDiv = document.getElementById(id)
             activeDiv.scrollIntoView({ behavior: "smooth" })
