@@ -60,7 +60,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1vh;
-    min-height: 99vh;
+    /* min-height: 99vh; */
 }
 
 .navUL {
@@ -76,7 +76,7 @@ body {
     align-items: center;
     transition: all .1s ease-in-out;
     width: fit-content;
-    padding: .5vw;
+    padding: .25vw;
 }
 
 #Summary,
@@ -408,7 +408,8 @@ p.educationDescription {
 }
 
 .ufoContainer {
-    margin-top: auto;
+    /* margin-top: auto; */
+    margin-top: 5vh;
 }
 
 .ufoImg {
