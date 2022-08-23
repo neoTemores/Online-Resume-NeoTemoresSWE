@@ -33,6 +33,9 @@ const Home = () => {
                 [id]: !prevState[id]
             }
         })
+
+        if (showSkill[id]) { return window.scrollTo(0, 0) }
+
         setTimeout(() => {
             let activeDiv = document.getElementById(id)
             activeDiv.scrollIntoView({ behavior: "smooth" })
