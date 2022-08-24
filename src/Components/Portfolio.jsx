@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel'
 import drawingAppThumbnail from '../Assets/thumbnails/drawingAppThumbnail.png'
@@ -13,9 +13,50 @@ import ebayThumbnail from '../Assets/thumbnails/ebayThumbnail.png'
 
 const Portfolio = ({ innerWidth }) => {
 
+    const [currentSlide, setCurrentSlide] = useState(0)
+
+    const handleChange = (index) => {
+        console.log(index)
+        setCurrentSlide(index)
+    }
+
+    const displayDescription = () => {
+        switch (currentSlide) {
+            case 0:
+                return 'Guess baby name game'
+                break;
+            case 1:
+                return 'Find luv chat demo'
+                break;
+            case 2:
+                return 'Project ritter a social media twitter clone'
+                break;
+            case 3:
+                return 'A 3D interactive Rubick\'s cube made with Three.js'
+                break;
+            case 4:
+                return 'Random team generator made as a side project'
+                break;
+            case 5:
+                return 'Pokemon card search application'
+                break;
+            case 6:
+                return 'Pixel art drawing app'
+                break;
+            case 7:
+                return 'Ebay page replica'
+                break;
+            case 8:
+                return 'TV show search app'
+                break;
+            default:
+                return ''
+        }
+    }
+
     return (
         <div className='carouselMainContainer' >
-            <Carousel showArrows={true} >
+            <Carousel showArrows={true} onChange={handleChange}>
 
                 <iframe className="babyGameVid" width="560" height={innerWidth > 600 ? '415' : '315'} src="https://www.youtube.com/embed/ZzzN1BS2jfM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={babyGameThumbNail} height="50" alt='pic' />
@@ -52,18 +93,8 @@ const Portfolio = ({ innerWidth }) => {
                 <iframe width="560" height={innerWidth > 600 ? '415' : '315'} src="https://www.youtube.com/embed/iUtceOoW4iE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                     <img src={tvGuideThumbnail} height="50" alt='pic' />
                 </iframe>
-
-                {/* {createVideoDisplay(babyGame, babyGameThumbNail)} */}
-                {/* {createVideoDisplay(findLuvVid, findLuvVivThumbNail)}
-                {createVideoDisplay(projectRitter, projectRitterThumbnail)}
-                {createVideoDisplay(teamGenerator, teamGeneratorThumbnail)}
-                {createVideoDisplay(rubiksCube, rubiksCubeThumbnail)}
-                {createVideoDisplay(drawingApp, drawingAppThumbnail)}
-                {createVideoDisplay(pokeDex, pokeDexThumbnail)}
-                {createVideoDisplay(tvGuide, tvGuideThumbnail)}
-                {createVideoDisplay(ebay, ebayThumbnail)} */}
-                {/* {createVideoDisplay(simpsons, simpsonsThumbnail)} */}
             </Carousel>
+            <p>{displayDescription()}</p>
         </div>
 
 
