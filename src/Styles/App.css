@@ -51,7 +51,8 @@ body {
     }
 
     .linksContainer {
-        display: grid;
+        /* display: grid; */
+        /* grid-template-columns: repeat(5, 18%); */
     }
 
 }
@@ -427,7 +428,6 @@ p.educationDescription {
 .ufoImg {
     animation: moveUfo 10s infinite
 }
-
 
 .divider {
     width: 100%;

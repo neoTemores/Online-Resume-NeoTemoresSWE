@@ -128,7 +128,7 @@ const Home = () => {
                         </div>
                     </li>
 
-                    {showSkill.Links && <li className='navLI skillInfo'><Links /></li>}
+                    {showSkill.Links && <li className='navLI skillInfo'><Links innerWidth={innerWidth} /></li>}
 
                 </ul>
             </nav>

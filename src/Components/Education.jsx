@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { GoPrimitiveDot } from "react-icons/go";
-import { CgBorderStyleSolid } from "react-icons/cg"
+import React from "react";
 
 const Education = () => {
   const createEducationDiv = (schoolName, program, gradDate, description) => {

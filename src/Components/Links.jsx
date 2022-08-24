@@ -6,7 +6,7 @@ import openResume from "../Assets/logos/resume-open.png";
 import downloadResume from "../Assets/logos/resume-download.png";
 import emailIcon from "../Assets/logos/email-icon.png";
 
-const Links = () => {
+const Links = ({ innerWidth }) => {
   return (
     <div className="linksContainer">
 
@@ -64,7 +64,7 @@ const Links = () => {
           <img src={downloadResume} height="50" alt="download resume" />
         </a>
         <a className="linksAnchorTag" href={pdf} download>
-          Download resume
+          {innerWidth > 600 ? "Download resume" : "Download"}
         </a>
       </div>
     </div>
