@@ -17,8 +17,8 @@ body {
     /* background-color: rgb(191, 221, 242);
     background-image: linear-gradient(150deg, rgb(242, 242, 241) 30%, rgb(118, 180, 223)); */
 
-    background-color: black;
     background: url('../Assets//moonEarthImg.jpeg') no-repeat center center fixed;
+    background-color: black;
     background-size: cover;
 
 }
