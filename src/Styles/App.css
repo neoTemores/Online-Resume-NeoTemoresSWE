@@ -337,14 +337,20 @@ button.control-arrow.control-prev {
     cursor: pointer;
 }
 
-/* .babyGameVid::after {
-    content: 'test';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-} */
+.videoDescription {
+    display: grid;
+    gap: 2vw;
+}
+
+.videoDescription h1 {
+    font-style: italic;
+    border-bottom: 1px solid #999;
+    width: fit-content
+}
+
+.videoDescription p {
+    text-indent: 1rem;
+}
 
 .linksContainer {
     display: flex;
