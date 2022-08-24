@@ -66,33 +66,33 @@ const Portfolio = ({ innerWidth }) => {
             case 5:
                 return (
                     <div className='videoDescription'>
-                        <h1>title</h1>
-                        <p>p1</p>
-                        <p>p2</p>
+                        <h1>Pokemon Card search app</h1>
+                        <p>This application was built when I was learning AJAX and the browser fetch API. When researching various APIs, I came across one that returns pokemon card data. I have always been a pokemon fan, so this project was a lot of fun.</p>
+                        <p>I built this app using vanilla JavaScript. This project also allowed me to practice DOM manipulation. All of the reuslts are displayed in card format, which are dynamically rendered HTML elements. Each card contains data received from the get request made to the API. Additionally, each card contains a link to purchase that individual card from a card trading site.</p>
                     </div>
                 )
             case 6:
                 return (
                     <div className='videoDescription'>
-                        <h1>title</h1>
-                        <p>p1</p>
-                        <p>p2</p>
+                        <h1>Pixel Art Drawing app</h1>
+                        <p>This drawing application was written in vanilla JavaScript, without any frame works for styling.The user is able to select a color, the selected color is displayed, and then draw by clicking or dragging. The user can also erase the drawing, save the drawing by giving it a name, and recover previous drawings by entering the saved name.</p>
+                        <p>The pixel canvas was created with a function that creates the individual div elements. A container div holds each pixel div with a display of 'grid'. The color choice was acheived by creating a current color variable used to asign a pixel a background color. The use of event listeners with the mouse down event allowed the dynamic changing of pixel color. Local storage was used to to save the drawing as an array of colored div elements.</p>
                     </div>
                 )
             case 7:
                 return (
                     <div className='videoDescription'>
-                        <h1>title</h1>
-                        <p>p1</p>
-                        <p>p2</p>
+                        <h1>Ebay Item page replica</h1>
+                        <p>This site was created as part of a team project, with the intent to recreate an Ebay item page as closely as possible. There are multiple components to this page that are being proxyed together. </p>
+                        <p>This page was built using JavaSript React. The React carousel package was used to create various elements of this application. All of the item for sale data is being retrieved from a database built with node in a RESTful API convention. </p>
                     </div>
                 )
             case 8:
                 return (
                     <div className='videoDescription'>
-                        <h1>title</h1>
-                        <p>p1</p>
-                        <p>p2</p>
+                        <h1>TV Guide app</h1>
+                        <p>A user is able to search for a show by entering the full or partial name. The results are displayed in card format and contain a show image, title, genre and synopsis. Each card also contains a 'view show' anchor tag, which links to a more detailed page containing all episode information. </p>
+                        <p>This was one of the first applications built using AJAX and the fetch API. The input text is captured and sent as part of the query string in a fetch request to a TV guide API. The resulting array of objects is then mapped over in vanilla JavaScript to dynamically create the HTML elements.</p>
                     </div>
                 )
             default:
