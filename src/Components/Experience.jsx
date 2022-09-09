@@ -38,7 +38,7 @@ const Experience = () => {
         "Berts Mega Mall service dept.",
         "June 2015",
         "Apr 2019",
-        "Responsibilities included greeting customers, listening to requests, scheduling appointments, estimating costs, verifying insurance, conducting inspections, and inspecting vehciles prior and post repairs. Acheived top grossing advisor within first year of employment, totaling over $1.2 Million in sales. Maintained top advisor position throughout entire length of employment and received outstanding customer service ratings. "
+        "Responsibilities included greeting customers, listening to requests, scheduling appointments, estimating costs, verifying insurance, conducting inspections, and inspecting vehicles prior and post repairs. Achieved top grossing advisor within first year of employment, totaling over $1.2 Million in sales. Maintained top advisor position throughout entire length of employment and received outstanding customer service ratings. "
       )}
     </div>
   );
