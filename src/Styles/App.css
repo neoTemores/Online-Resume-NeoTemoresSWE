@@ -447,7 +447,7 @@ p.educationDescription {
 
 
     50% {
-        transform: translateX(calc(100vw - 90px));
+        transform: translateX(80vw);
 
     }
 
